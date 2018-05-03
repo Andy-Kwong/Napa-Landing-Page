@@ -71,8 +71,9 @@ if ( $('.jquery-center').is_exist() ) {
 if ( $("#countdown_text_layout").is_exist() ) {
   simplyCountdown('#countdown_text_layout', {
       year: 2018,
-      month: 4,
-      day: 11,
+      month: 7,
+      day: 27,
+      hours: 3,
       inline: true,
       words: {
           days: 'days',
@@ -567,7 +568,7 @@ if ( $('#particles-js').is_exist() ) {
                 mode: "grab"
             },
             onclick: {
-                enable: !1,
+                enable: false,
                 mode: "push"
             },
             resize: !0
