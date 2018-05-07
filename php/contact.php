@@ -7,7 +7,7 @@ include_once('config.php');
 
 // Configuration option.
 
-$recipent_address = CONTACT_FORM_RECIPIENT;
+$recipient_address = CONTACT_FORM_RECIPIENT;
 $default_subject = CONTACT_DEFAULT_SUBJECT;
 
 $name = $_POST['mrs_name'];
@@ -51,7 +51,7 @@ $headers .= "MIME-Version: 1.0" . PHP_EOL;
 $headers .= "Content-type: text/plain; charset=utf-8" . PHP_EOL;
 $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
 
-$mail = mail($recipent_address, $e_subject, $msg, $headers);
+$mail = mail($recipient_address, $e_subject, $msg, $headers);
 
 
 if($mail && $check) {
